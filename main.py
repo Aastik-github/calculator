@@ -1,5 +1,4 @@
-# this is a calculator
-operations = ["addition","subtraction","multiplication","division"]
+operations = ["addition","subtraction","multiplication","division","floor divison","remainder"]
 a = input("please enter what you want to do out of addition,subtraction,multiplication,division -> ?")
 b = int(input("please enter your first digit -> "))
 c = int(input("please enter your second digit"))
@@ -17,3 +16,12 @@ elif a == operations[2]:
 elif a == operations[3]:
   n = b/c
   print(f"the quoitent of your digits is : {n}")
+elif a == operations[4]:
+    q = b//c
+    print(q)
+elif a == operations[5]:
+     o == b%c
+     print(o)
+else:
+    print(f"no operation named {a}")
+    
